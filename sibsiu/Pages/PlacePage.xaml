@@ -1,0 +1,27 @@
+﻿<Page x:Class="sibsiu.Pages.PlacePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:sibsiu.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="800" d:DesignWidth="1200"
+      
+      Title="PlacePage">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="91*"/>
+            <ColumnDefinition Width="109*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="13*"/>
+            <RowDefinition Height="87*"/>
+        </Grid.RowDefinitions>
+        <Image Source="/Image5.png" Stretch="Fill" HorizontalAlignment="Center" Width="456" Height="399" VerticalAlignment="Top" Grid.Row="1" Margin="0,10,0,0"/>
+        <Label Content="5 этаж(основной)" Margin="45,0,43,0" FontSize="48" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White" Height="83" VerticalAlignment="Center"/>
+        <Image Margin="120,10,120,0" Source="/JMJqR1g0KeU.jpg" Stretch="Fill" Grid.Row="1" Grid.Column="1" Height="421" VerticalAlignment="Top"/>
+        <Label Content="Университетский кампус" Margin="16,24,10,0" FontSize="48" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White" Grid.Column="1" Height="70" VerticalAlignment="Top"/>
+        <TextBlock Margin="120,448,132,0" TextWrapping="Wrap" TextAlignment="Left" Foreground="White" FontSize="22" Height="204" VerticalAlignment="Top" Grid.Column="1" Grid.Row="1"><Run Text="1"/><Run Text=". "/><Run Text="Главный"/><LineBreak/><Run Text="2"/><Run Text=". "/><Run Text="Г"/><Run Text="орно-технологический"/><LineBreak/><Run Text="3. "/><Run Text="Металлургический"/><LineBreak/><Run Text="4"/><Run Text=". "/><Run Text="Спорт комплекс"/><LineBreak/><Run Text="5"/><Run Text=". "/><Run Text="Стадион"/><LineBreak/><Run Text="6"/><Run Text=". "/><Run Text="Блок поточных аудиторий"/><LineBreak/><Run Language="ru-ru" Text="7"/><Run Language="en-gb" Text=". "/><Run Language="ru-ru" Text="Культурный центр "/></TextBlock>
+    </Grid>
+</Page>

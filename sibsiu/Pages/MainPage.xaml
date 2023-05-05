@@ -1,0 +1,29 @@
+﻿<Page x:Class="sibsiu.Pages.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:sibsiu.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="800" d:DesignWidth="1200"
+      Title="MainPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="63*"/>
+            <RowDefinition Height="337*"/>
+        </Grid.RowDefinitions>
+        <Label Content="Интересные факты" Margin="371,10,371,10" FontSize="48" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White"/>
+        <Grid Margin="144,54,144,150" Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="81*"/>
+                <RowDefinition Height="389*"/>
+            </Grid.RowDefinitions>
+            <Rectangle Fill="#FF464444"/>
+            <Rectangle Fill="#FF5B5B5B" Grid.Row="1"/>
+            <Label Content="История СибГИУ" FontSize="40" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White" Margin="227,0,227,0"/>
+            <Image Margin="10,13,0,10" Source="/Image4.png" Stretch="Fill" HorizontalAlignment="Left" Width="476" Grid.Row="1"/>
+            <TextBlock Margin="500,13,10,0" TextWrapping="Wrap" TextAlignment="Left" Foreground="White" FontSize="36" Height="366" VerticalAlignment="Top" Grid.Row="1"><Run Text="СибГИУ основан в 1930 годах, это был первый вуз построенный в Нововокузнецке"/></TextBlock>
+        </Grid>
+    </Grid>
+</Page>

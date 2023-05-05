@@ -1,0 +1,36 @@
+﻿<Page x:Class="sibsiu.Pages.PlansPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:sibsiu.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="800" d:DesignWidth="1200"
+      Title="PlansPage">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="367*"/>
+            <ColumnDefinition Width="433*"/>
+        </Grid.ColumnDefinitions>
+        <Rectangle Margin="43,65,0,98" Fill="#FF5A5A5A" RadiusX="14.64" RadiusY="14.64"/>
+        <Rectangle Margin="0,82,42,115" Fill="#FFADADAD" Grid.Column="1"/>
+        <Grid Grid.Column="1" Margin="0,82,42,115">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200*"/>
+                <ColumnDefinition Width="191*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="55*"/>
+                <RowDefinition Height="46*"/>
+            </Grid.RowDefinitions>
+            <Image Margin="10,0,12,0" Source="/Image1.png" Stretch="Fill" Height="309" VerticalAlignment="Center" Grid.ColumnSpan="2"/>
+            <Image Margin="10,0,11,0" Source="/Image2.png" Stretch="Fill" Grid.Row="1" Height="255" VerticalAlignment="Center"/>
+            <TextBlock Margin="10,10,10,16" TextWrapping="Wrap" TextAlignment="Justify" Foreground="White" FontSize="20" Grid.Row="1" Grid.Column="1"><Run Language="ru-ru" Text="Расписание для первокурсников (СПО)"/></TextBlock>
+        </Grid>
+        <Grid Margin="43,65,0,98">
+            <Label Content="Расписание" Margin="36,10,36,0" VerticalAlignment="Top" Foreground="White" FontSize="48" Height="74" />
+            <TextBlock Margin="36,89,36,23" TextWrapping="Wrap" TextAlignment="Left" Text="На этой странице отображается расписание для всех институтов. Чтобы узнать расписание занятий вам необходимо выбрать свой институт и найти свою группу" Foreground="White" FontSize="36"/>
+        </Grid>
+    </Grid>
+</Page>
